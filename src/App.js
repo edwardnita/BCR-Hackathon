@@ -23,6 +23,9 @@ export default function App() {
           <div className="change_login">
             <a href="#">Utilizeaza recunoasterea faciala</a>
           </div>
+          <div className="button_login">
+            <div className="button">LOGIN</div>
+          </div>
         </div>
       </div>
     </div>
