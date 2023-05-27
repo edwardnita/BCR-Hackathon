@@ -11,12 +11,8 @@ detector = FER(mtcnn=True)
 # Detectează fețele și emoțiile
 result = detector.detect_emotions(image)
 
-# Extrage emoțiile detectate pentru fiecare față
-emotions = [face["emotions"] for face in result]
-
-# Parcurge fiecare față detectată și afișează emoția
-for i, emotion in enumerate(emotions):
-    print(f"Emoția persoanei {i+1}:")
-    print(emotion)
-
-
+# Parcurge fiecare față detectată și afișează emoția cu scorul cel mai mare
+for i, face in enumerate(result):
+    emotions = face["emotions"]
+    max_emotion = max(emotions, key=emotions.get)
+    print(f"Emoția persoanei {i+1}: {max_emotion}")
