@@ -27,6 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateX(0%);
 }
 
 .image {
@@ -148,6 +149,7 @@
 }
 
 .change_login {
+  text-decoration: underline gray;
   width: 100%;
   height: 10%;
   display: flex;
@@ -185,7 +187,28 @@
   border-color: transparent;
 }
 
+.button_wide {
+  width: 50%;
+  height: 55%;
+  /* background-color: rgb(255, 255, 255); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 8px;
+  border-color: transparent;
+}
+
 .button:hover {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.button_wide:hover {
   color: white;
   background-color: transparent;
   border-color: white;
