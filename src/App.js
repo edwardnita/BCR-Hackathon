@@ -31,10 +31,12 @@ export default function App() {
             </div>
           </div>
           <div className="change_login">
-            <a href="#">Utilizeaza recunoasterea faciala</a>{' '}
+            <a href="#" className="change_anchor">
+              Utilizează recunoașterea facială
+            </a>
           </div>
           <div className="button_login">
-            <button className="button">LOGIN</button>
+            <button className="button">Login</button>
           </div>
         </div>
       </div>
