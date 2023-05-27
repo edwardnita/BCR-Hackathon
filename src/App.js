@@ -14,6 +14,15 @@ export default function App() {
           <div className="welcome">
             <p className="welcome_text">Bine ai revenit!</p>
           </div>
+          <div className="username">
+            <div className="username_input">fiedk</div>
+          </div>
+          <div className="password">
+            <div className="password_input">fiedk</div>
+          </div>
+          <div className="change_login">
+            <a href="#">Utilizeaza recunoasterea faciala</a>
+          </div>
         </div>
       </div>
     </div>
