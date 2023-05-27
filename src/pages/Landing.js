@@ -8,38 +8,36 @@ const Landing = () => {
           src="https://i.imgur.com/H9qijgJ.png"
           className="logout_zone"
         ></img>
-        <div className="top_element">
+        <div className="top_element_landing">
           <img src="https://i.imgur.com/izJHULq.png" className="image"></img>
         </div>
       </div>
-      <div className="content">
-        <div className="form">
-          <div className="welcome">
-            <p className="welcome_text">Bine ai revenit!</p>
+      <div className="content_landing">
+        <div className="form_landing">
+          <div className="welcome_landing">
+            <p className="welcome_text">Bună, Ph0en1x!</p>
           </div>
-          <div className="username">
-            <div className="username_input">
+          <div className="username_landing">
+            <div className="username_input_landing">
               <input
-                placeholder="Username"
+                placeholder="Cu ce te pot ajuta?"
                 class="username_input_field"
               ></input>
             </div>
-          </div>
-          <div className="password">
-            <div className="password_input">
-              <input
-                placeholder="Password"
-                class="password_input_field"
-              ></input>
+            <div className="icons_right">
+              <div className="voice_control">
+                <img
+                  src="https://i.imgur.com/AvAYCLG.png"
+                  class="voice_logo"
+                ></img>
+              </div>
+              <div className="send">
+                <img
+                  src="https://i.imgur.com/XoJ1DUc.png"
+                  class="send_logo"
+                ></img>
+              </div>
             </div>
-          </div>
-          <div className="change_login">
-            <a href="#" className="change_anchor">
-              Utilizează recunoașterea facială
-            </a>
-          </div>
-          <div className="button_login">
-            <button className="button">Login</button>
           </div>
         </div>
       </div>
