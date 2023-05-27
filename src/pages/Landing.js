@@ -48,11 +48,16 @@ const Landing = () => {
             <div class="footer">
               <div className="text_footer">Mai multe informații</div>
             </div>
-            <div className="icon_footer">
-              <img
-                src="https://i.imgur.com/NLmsoZv.png"
-                className="low_icon"
-              ></img>
+            <a href="#scroll">
+              <div className="icon_footer">
+                <img
+                  src="https://i.imgur.com/NLmsoZv.png"
+                  className="low_icon"
+                ></img>
+              </div>
+            </a>
+            <div className="second_page" id="scroll">
+              Merge
             </div>
           </div>
         </div>
