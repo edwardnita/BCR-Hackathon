@@ -19,7 +19,6 @@
   align-items: center;
   width: 100%;
   height: 20%;
-  background-color: aqua;
 }
 
 .top_element {
@@ -28,11 +27,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateX(-7%);
 }
 
 .image {
   aspect-ratio: initial;
   width: 170px;
+  transform: translateY(2px);
+}
+
+.logout_zone {
+  aspect-ratio: initial;
+  width: 35px;
+  float: left;
+  margin-left: 10%;
 }
 
 .content {
@@ -208,5 +216,14 @@
 @media (max-width: 550px) {
   .welcome_text {
     font-size: 7vw;
+  }
+
+  .top_element {
+    transform: translateX(-11%);
+  }
+
+  .logout_zone {
+    aspect-ratio: initial;
+    width: 30px;
   }
 }

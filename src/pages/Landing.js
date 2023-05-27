@@ -1,10 +1,13 @@
 import React from 'react';
-
+import './Landing.css';
 const Landing = () => {
   return (
     <div className="main">
       <div className="top">
-        <div className="logout_zone">log</div>
+        <img
+          src="https://i.imgur.com/H9qijgJ.png"
+          className="logout_zone"
+        ></img>
         <div className="top_element">
           <img src="https://i.imgur.com/izJHULq.png" className="image"></img>
         </div>
