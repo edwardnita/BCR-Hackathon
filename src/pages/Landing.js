@@ -39,6 +39,11 @@ const Landing = () => {
               </div>
             </div>
           </div>
+          <div className="response">
+            <div className="response_input_landing" id="response_field">
+              <div className="test">Răspuns:</div>
+            </div>
+          </div>
           <div class="lower_part_landing">
             <div class="footer">
               <div className="text_footer">Mai multe informații</div>
