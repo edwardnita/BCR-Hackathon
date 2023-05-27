@@ -1,11 +1,18 @@
 import React from 'react';
-import './style.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Login from './pages/Login';
+import Landing from './pages/Landing';
+const router = createBrowserRouter([
+  {
+    path: '/login',
+    element: <Login />,
+  },
+  {
+    path: '/landing',
+    element: <Landing />,
+  },
+]);
 
 export default function App() {
-  return (
-    <div>
-      <h1>Hai cu hacku ala nebun!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
