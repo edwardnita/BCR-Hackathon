@@ -70,10 +70,11 @@
 }
 
 .username_landing {
-  height: 50%;
+  height: 20%;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .password {
@@ -87,7 +88,7 @@
 .username_input_landing {
   /* background-color: rgb(97, 161, 0); */
   width: 60%;
-  height: 30%;
+  height: 75%;
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -162,6 +163,37 @@
   .icons_right {
     width: 20%;
   }
+}
+
+.lower_part_landing {
+  height: 55%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.text_footer {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  font-weight: 200;
+}
+
+.icon_footer {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 550px) {

@@ -39,6 +39,17 @@ const Landing = () => {
               </div>
             </div>
           </div>
+          <div class="lower_part_landing">
+            <div class="footer">
+              <div className="text_footer">Mai multe informații</div>
+            </div>
+            <div className="icon_footer">
+              <img
+                src="https://i.imgur.com/NLmsoZv.png"
+                className="low_icon"
+              ></img>
+            </div>
+          </div>
         </div>
       </div>
     </div>
