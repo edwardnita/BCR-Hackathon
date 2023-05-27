@@ -6,10 +6,7 @@ export default function App() {
     <div className="main">
       <div className="top">
         <div className="top_element">
-          <div className="logo">
-            de{' '}
-            <img src="https://drive.google.com/uc?export=view&id=1bdtIrzqXasuw_qWBJNDwxKsPvW3zwtYG/"></img>
-          </div>
+          <img src="https://i.imgur.com/0rzpjwn.png" className="image"></img>
         </div>
       </div>
       <div className="content">content</div>
