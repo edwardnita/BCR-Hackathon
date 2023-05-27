@@ -15,16 +15,26 @@ export default function App() {
             <p className="welcome_text">Bine ai revenit!</p>
           </div>
           <div className="username">
-            <div className="username_input">fiedk</div>
+            <div className="username_input">
+              <input
+                placeholder="Username"
+                class="username_input_field"
+              ></input>
+            </div>
           </div>
           <div className="password">
-            <div className="password_input">fiedk</div>
+            <div className="password_input">
+              <input
+                placeholder="Password"
+                class="password_input_field"
+              ></input>
+            </div>
           </div>
           <div className="change_login">
-            <a href="#">Utilizeaza recunoasterea faciala</a>
+            <a href="#">Utilizeaza recunoasterea faciala</a>{' '}
           </div>
           <div className="button_login">
-            <div className="button">LOGIN</div>
+            <button className="button">LOGIN</button>
           </div>
         </div>
       </div>
