@@ -16,6 +16,7 @@ const Landing = () => {
         <div className="form_landing">
           <div className="welcome_landing">
             <p className="welcome_text">Bună, Ph0en1x!</p>
+            <p className="status_text">Nu fi trist, maine intra slaarrul!</p>
           </div>
           <div className="username_landing">
             <div className="username_input_landing">
