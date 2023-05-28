@@ -25,6 +25,10 @@ const Login = () => {
     setPassword(event.target.value);
   };
 
+  const toggleShowCamera = () => {
+    setShowCamera(false);
+  };
+
   async function loginUser() {
     setFormIsValid(false);
     let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -133,6 +137,13 @@ const Login = () => {
                 onClick={loginUser}
               >
                 {!facialRec ? 'Login' : 'Login facial'}
+              </button>
+            </div>
+          )}
+          {showCamera && (
+            <div className="button_login">
+              <button className="button" onClick={toggleShowCamera}>
+                Inapoi
               </button>
             </div>
           )}
