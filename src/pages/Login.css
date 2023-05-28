@@ -227,6 +227,9 @@
 }
 
 @media (max-width: 550px) {
+  .top_element {
+    padding-left: 100px;
+  }
   .welcome_text {
     font-size: 7vw;
   }
