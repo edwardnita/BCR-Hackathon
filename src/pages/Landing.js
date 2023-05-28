@@ -147,8 +147,9 @@ const Landing = () => {
                   className="voice_logo"
                 ></img>
               </div>
-              <div className="send" onClick={askHelp}>
+              <div className="send">
                 <img
+                  onClick={askHelp}
                   src="https://i.imgur.com/XoJ1DUc.png"
                   className="send_logo"
                 ></img>
