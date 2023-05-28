@@ -1,7 +1,11 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Landing = () => {
-  return <div>salut</div>;
+  const { state } = useLocation();
+  const message = state['message'];
+
+  return <div>{message}</div>;
 };
 
 export default Landing;
