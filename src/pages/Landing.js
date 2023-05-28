@@ -61,20 +61,82 @@ const Landing = () => {
               <div className="account_container">
                 <div className="account_zone_1">
                   <div className="account_holder_1">
-                    <div className="account_info_1">1</div>
-                    <div className="account_history_1">1</div>
+                    <div className="account_info_1">
+                      <div className="account_name_1">Cont curent</div>
+                      <div className="account_sold_pozitiv_1">
+                        999,<p id="smaller">99 RON</p>
+                      </div>
+                    </div>
+                    <div className="account_history_1">
+                      <div className="account_history_title">Tranzacții</div>
+                      <div className="account_history_content">
+                        <div className="pozitive_entry">+10 lei - Vlad</div>
+                        <div className="negative_entry">-75 lei - Laur</div>
+                        <div className="pozitive_entry">+23 lei - Laur</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="account_zone_2">
                   <div className="account_holder_2">
-                    <div className="account_info_2">2</div>
-                    <div className="account_history_2">1</div>
+                    <div className="account_info_2">
+                      <div className="account_name_2">Cont economii</div>
+                      <div className="account_sold_pozitiv_2">
+                        999,<p id="smaller">99 RON</p>
+                      </div>
+                    </div>
+                    <div className="account_history_2">
+                      <div className="account_history_title">Tranzacții</div>
+                      <div className="account_history_content">
+                        <div className="pozitive_entry">+10 lei - Vlad</div>
+                        <div className="negative_entry">-75 lei - Laur</div>
+                        <div className="pozitive_entry">+23 lei - Laur</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="account_zone_3">
                   <div className="account_holder_3">
-                    <div className="account_info_3">3</div>
-                    <div className="account_history_3">1</div>
+                    <div className="account_info_3">
+                      <div className="account_name_3">Cont credit</div>
+                      <div className="account_sold_negativ_3">
+                        -999,<p id="smaller">99 RON</p>
+                      </div>
+                    </div>
+                    <div className="account_history_3">
+                      <div className="account_history_title">Tranzacții</div>
+                      <div className="account_history_content">
+                        <div className="pozitive_entry">+10 lei - Vlad</div>
+                        <div className="negative_entry">-75 lei - Laur</div>
+                        <div className="pozitive_entry">+23 lei - Laur</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="third_page">
+              <div className="title_third_page">Contul tău:</div>
+              <div className="big_account_container">
+                <div className="big_account_zone">
+                  <div className="big_account_holder">
+                    <div className="account_info_1">
+                      <div className="account_name_1">Cont curent</div>
+                      <div className="account_sold_pozitiv_1">
+                        999,<p id="smaller">99 RON</p>
+                      </div>
+                    </div>
+                    <div className="big_account_history">
+                      <div className="big_account_history_title">
+                        Tranzacții
+                      </div>
+                      <div className="big_account_history_content">
+                        <div className="pozitive_entry">+10 lei - Vlad</div>
+                        <div className="negative_entry">-75 lei - Laur</div>
+                        <div className="pozitive_entry">+23 lei - Laur</div>
+                        <div className="pozitive_entry">+23 lei - Laur</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
