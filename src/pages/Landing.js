@@ -57,7 +57,27 @@ const Landing = () => {
               </div>
             </a>
             <div className="second_page" id="scroll">
-              Merge
+              <div className="title_second_page">Conturile tale:</div>
+              <div className="account_container">
+                <div className="account_zone_1">
+                  <div className="account_holder_1">
+                    <div className="account_info_1">1</div>
+                    <div className="account_history_1">1</div>
+                  </div>
+                </div>
+                <div className="account_zone_2">
+                  <div className="account_holder_2">
+                    <div className="account_info_2">2</div>
+                    <div className="account_history_2">1</div>
+                  </div>
+                </div>
+                <div className="account_zone_3">
+                  <div className="account_holder_3">
+                    <div className="account_info_3">3</div>
+                    <div className="account_history_3">1</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
