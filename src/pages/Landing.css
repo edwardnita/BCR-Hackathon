@@ -565,4 +565,9 @@
     height: 66vh;
     width: 100%;
   }
+
+  .third_page {
+    padding-top: 115vh;
+    height: 100vh;
+  }
 }
