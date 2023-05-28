@@ -1,47 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Landing = () => {
+function App() {
+  const [transcript, setTranscript] = useState('');
+  const [isListening, setIsListening] = useState(false);
+
+  const startListening = () => {
+    setIsListening(true);
+    recognition.start();
+  };
+
+  const stopListening = () => {
+    setIsListening(false);
+    recognition.stop();
+  };
+
+  const recognition = new window.webkitSpeechRecognition();
+
+  recognition.lang = 'ro-RO';
+  recognition.continuous = true;
+  recognition.interimResults = true;
+
+  recognition.onresult = (event) => {
+    const transcript = Array.from(event.results)
+      .map((result) => result[0])
+      .map((result) => result.transcript)
+      .join('');
+
+    setTranscript(transcript);
+  };
+
   return (
-    <div className="main">
-      <div className="top">
-        <div className="logout_zone">log</div>
-        <div className="top_element">
-          <img src="https://i.imgur.com/izJHULq.png" className="image"></img>
-        </div>
-      </div>
-      <div className="content">
-        <div className="form">
-          <div className="welcome">
-            <p className="welcome_text">Bine ai revenit!</p>
-          </div>
-          <div className="username">
-            <div className="username_input">
-              <input
-                placeholder="Username"
-                class="username_input_field"
-              ></input>
-            </div>
-          </div>
-          <div className="password">
-            <div className="password_input">
-              <input
-                placeholder="Password"
-                class="password_input_field"
-              ></input>
-            </div>
-          </div>
-          <div className="change_login">
-            <a href="#" className="change_anchor">
-              Utilizează recunoașterea facială
-            </a>
-          </div>
-          <div className="button_login">
-            <button className="button">Login</button>
-          </div>
-        </div>
-      </div>
+    <div>
+      <h1>Recunoașterea Vorbirii</h1>
+      <button onClick={startListening} disabled={isListening}>
+        Începe Ascultarea
+      </button>
+      <button onClick={stopListening} disabled={!isListening}>
+        Oprește Ascultarea
+      </button>
+      <p>Transcriere: {transcript}</p>
     </div>
   );
-};
+}
 
-export default Landing;
+export default App;
