@@ -14,6 +14,8 @@ const Landing = () => {
   const [showEconomies, setShowEconomies] = useState(false);
   const [showCredit, setShowCredit] = useState(false);
   const [isListening, setIsListening] = useState(false);
+  const [soldCurent, setSoldCurent] = useState(sold['curent']);
+  const [soldEconomii, setSoldEconomii] = useState(sold['economii']);
   let navigate = useNavigate();
 
   const logout = () => {
@@ -35,6 +37,8 @@ const Landing = () => {
     });
     const data = await response.json();
     setAnswer(data['predict']);
+    setSoldCurent(data['curent']);
+    setSoldEconomii(data['economii']);
   }
 
   const handleQuestionChange = (event) => {
@@ -180,7 +184,7 @@ const Landing = () => {
                       <div className="account_info_1">
                         <div className="account_name_1">Cont curent</div>
                         <div className="account_sold_pozitiv_1">
-                          {sold['curent']},<p id="smaller">00 RON</p>
+                          {soldCurent},<p id="smaller">00 RON</p>
                         </div>
                       </div>
                       <div className="account_history_1">
@@ -199,7 +203,7 @@ const Landing = () => {
                       <div className="account_info_2">
                         <div className="account_name_2">Cont economii</div>
                         <div className="account_sold_pozitiv_2">
-                          {sold['economii']},<p id="smaller">00 RON</p>
+                          {soldEconomii},<p id="smaller">00 RON</p>
                         </div>
                       </div>
                       <div className="account_history_2">
@@ -243,7 +247,7 @@ const Landing = () => {
                       <div className="account_info_1">
                         <div className="account_name_1">Cont curent</div>
                         <div className="account_sold_pozitiv_1">
-                          {sold['curent']},<p id="smaller">00 RON</p>
+                          {soldCurent},<p id="smaller">00 RON</p>
                         </div>
                       </div>
                       <div className="big_account_history">
@@ -278,7 +282,7 @@ const Landing = () => {
                       <div className="account_info_1">
                         <div className="account_name_1">Cont curent</div>
                         <div className="account_sold_pozitiv_1">
-                          {sold['economii']},<p id="smaller">00 RON</p>
+                          {soldEconomii},<p id="smaller">00 RON</p>
                         </div>
                       </div>
                       <div className="big_account_history">

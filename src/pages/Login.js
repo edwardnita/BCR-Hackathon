@@ -77,7 +77,7 @@ const Login = () => {
               clearInterval(interval);
             }
           }
-        }, 2000);
+        }, 1000);
       }
     }
   }
