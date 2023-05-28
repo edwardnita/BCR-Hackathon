@@ -90,7 +90,9 @@ const Login = () => {
           <div className="welcome">
             <p className="welcome_text">Bine ai revenit!</p>
           </div>
-          {showCamera && <Webcam height={300} ref={webcamRef} />}
+          {showCamera && (
+            <Webcam height={300} ref={webcamRef} className="welcome" />
+          )}
           <div className="username">
             <div className="username_input">
               <input
@@ -101,7 +103,7 @@ const Login = () => {
               ></input>
             </div>
           </div>
-          )
+
           {!facialRec && (
             <div className="password">
               <div className="password_input">
@@ -110,6 +112,7 @@ const Login = () => {
                   placeholder="Password"
                   className="password_input_field"
                   value={password}
+                  type="password"
                 ></input>
               </div>
             </div>
