@@ -1,15 +1,21 @@
 import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Login from './pages/Login';
+import Landing from './pages/Landing';
+
 import './style.css';
 
+const router = createBrowserRouter([
+  {
+    path: '/login',
+    element: <Login />,
+  },
+  {
+    path: '/landing',
+    element: <Landing />,
+  },
+]);
+
 export default function App() {
-  return (
-    <div className="main">
-      <div className="top">
-        <div className="top_element">
-          <img src="https://i.imgur.com/0rzpjwn.png" className="image"></img>
-        </div>
-      </div>
-      <div className="content">content</div>
-    </div>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
