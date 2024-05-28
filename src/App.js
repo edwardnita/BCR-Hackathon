@@ -2,6 +2,9 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Login from './pages/Login';
 import Landing from './pages/Landing';
+
+import './style.css';
+
 const router = createBrowserRouter([
   {
     path: '/login',
