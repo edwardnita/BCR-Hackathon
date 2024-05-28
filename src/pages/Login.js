@@ -94,6 +94,7 @@ const Login = () => {
           <div className="welcome">
             <p className="welcome_text">Bine ai revenit!</p>
           </div>
+
           {showCamera && (
             <Webcam height={300} ref={webcamRef} className="welcome" />
           )}
